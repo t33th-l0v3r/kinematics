@@ -1,0 +1,58 @@
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+    text-align: center;
+    background-color: #080708; /* Background color */
+}
+
+h1, h2, p {
+    color: #e6e8e6; /* Text color for h1, h2, and p */
+}
+
+#game {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+#equation-column, #options-column {
+    width: 45%;
+    margin: 10px;
+}
+
+#equations-list, #variables-list {
+    margin: 20px;
+}
+
+.equation-option, .variable-option {
+    font-family: 'Comic Sans MS', sans-serif; /* Set Comic Sans for buttons */
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 15px;
+    font-size: 1em;
+    background-color: #3772ff; /* Original color before clicking */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+
+/* Add a gray gradient shadow effect on hover */
+.equation-option:hover, .variable-option:hover {
+    box-shadow: 0px 4px 8px rgba(134, 176, 220, 0.415), 0px 6px 20px rgba(134, 176, 220, 0.415);
+}
+
+/* Style for when an option is selected */
+.equation-option.selected, .variable-option.selected {
+    background-color: #e7a92e; /* Change color after selecting */
+    color: white;
+}
+
+/* Result text styling */
+#result {
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: #e6e8e6; /* Result text color */
+}
